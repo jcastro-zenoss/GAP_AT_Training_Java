@@ -1,6 +1,6 @@
-package com.gap.at;
+package com.gap.testSuites;
 
-import com.gap.at.selenium.SeleniumBase;
+import com.gap.selenium.SeleniumBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
