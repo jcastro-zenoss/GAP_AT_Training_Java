@@ -13,9 +13,9 @@
       <version>6.9.4</version>
     </dependency>
     <dependency>
-      <groupId>ru.stqa.selenium</groupId>
-      <artifactId>webdriver-factory</artifactId>
-      <version>1.1.46</version>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>2.51.0</version>
     </dependency>
   </dependencies>
   <build>
