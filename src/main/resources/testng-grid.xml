@@ -7,14 +7,14 @@
     <parameter name="nodePort" value="5566"/>
 
     <test name="Test1">
-        <parameter name="browser" value="firefox"/>
+        <parameter name="browser" value="Grid_Firefox"/>
         <classes>
           <class name="com.gap.testSuites.GridTest"/>
         </classes>
     </test>
 
     <test name="Test2">
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="Grid_chrome"/>
         <classes>
             <class name="com.gap.testSuites.GridTest"/>
         </classes>

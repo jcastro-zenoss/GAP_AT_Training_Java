@@ -93,14 +93,14 @@ public class SeleniumBase {
         this.driver=driver;
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     @Parameters({"browser", "nodeUrl", "nodeIp", "nodePort"})
     public void before(String browser, String nodeUrl, String nodeIp, String nodePort) throws MalformedURLException {
         URL url = new URL(String.format(nodeUrl, nodeIp, nodePort));
         initDriver(browser, url);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void after(){
         driver.quit();
     }
