@@ -14,7 +14,7 @@
     </test>
 
     <test name="Test2">
-        <parameter name="browser" value="Grid_chrome"/>
+        <parameter name="browser" value="Grid_Chrome"/>
         <classes>
             <class name="com.gap.testSuites.GridTest"/>
         </classes>
