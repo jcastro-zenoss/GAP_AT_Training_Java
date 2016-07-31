@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Gid_Tests" verbose="5">
+<suite name="Gid_Tests" parallel="tests" verbose="5">
 
     <parameter name="nodeUrl" value="http://%s:%s/wd/hub/"/>
     <parameter name="nodeIp" value="192.168.0.142"/>
