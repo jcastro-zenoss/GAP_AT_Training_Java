@@ -15,8 +15,11 @@ public class Test {
 
     public static void main(String [] args){
 
-        String url = "https://testlink.wearegap.com/lib/api/xmlrpc/v1/xmlrpc.php";
+        String url = "http://testlink.wearegap.com/lib/api/xmlrpc/v1/xmlrpc.php";
         String key = "80535d62d292f57003486de62441abe8";
+
+        /*String url = "http://testlink.zenoss.loc/lib/api/xmlrpc/v1/xmlrpc.php";
+        String key = "dbeaef5d4fe168c1b3cc12d72a636651";*/
 
         try {
             createTestLinkProject(url, key);
