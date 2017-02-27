@@ -11,7 +11,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
  */
 public class SeleniumBase {
 
-    private WebDriver driver;
+    protected WebDriver driver;
 
     /**
      * This method create a instance of the driver

@@ -1,4 +1,4 @@
-package com.gap.at;
+package com.gap.at.testsuite;
 
 import com.gap.at.utils.TakeScreenshots;
 import com.gap.at.selenium.SeleniumBase;
