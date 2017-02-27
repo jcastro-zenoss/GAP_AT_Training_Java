@@ -1,6 +1,6 @@
 package com.gap.at.pageobject;
 
-import com.gap.at.BotStyleTest.BotStyle;
+import com.gap.at.botstyletest.BotStyle;
 import org.openqa.selenium.WebDriver;
 
 /**

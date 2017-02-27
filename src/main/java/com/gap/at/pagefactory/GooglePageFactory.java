@@ -1,6 +1,6 @@
 package com.gap.at.pagefactory;
 
-import com.gap.at.BotStyleTest.BotStyle;
+import com.gap.at.botstyletest.BotStyle;
 import com.gap.at.pageobject.SearchPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

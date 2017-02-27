@@ -1,4 +1,4 @@
-package com.gap.at.BotStyleTest;
+package com.gap.at.botstyletest;
 
 import com.google.common.base.Function;
 import org.openqa.selenium.By;
@@ -7,9 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.sql.Driver;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by jcastro on 2/26/17.
