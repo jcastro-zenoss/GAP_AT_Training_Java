@@ -17,14 +17,14 @@ public class Test {
         WebDriver driver = seleniumBase.initDriver("Chrome");
 
         driver.get("http://www.google.com/xhtml");
-        TakeScreenshots.takeScreenshot(driver, "./src/main/resources/screenshots/screenshot1");
+        TakeScreenshots.takeScreenshot(driver, "./src/main/resources/screenshots/screenshot1.png");
         try {
             Thread.sleep(5000);  // Let the user actually see something!
             WebElement we = driver.findElement(By.name("q"));
             we.sendKeys("Selenium");
             we.submit();
             Thread.sleep(5000);  // Let the user actually see something!
-            TakeScreenshots.takeScreenshot(driver, "./src/main/resources/screenshots/screenshot2");
+            TakeScreenshots.takeScreenshot(driver, "./src/main/resources/screenshots/screenshot2.png");
             driver.quit();
         } catch (InterruptedException e) {
             e.printStackTrace();
