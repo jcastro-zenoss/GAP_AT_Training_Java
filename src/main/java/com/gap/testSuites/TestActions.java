@@ -9,13 +9,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 /**
  * Created by Oscar Valerio on 11/07/2016.
  */
 public class TestActions {
     WebDriver driver;
     // the url change depends on each local machine.
-    String url="file:///C:/Users/Automation/Desktop/AT/workspace/GAP_AT_Training_Java/src/main/resources/html/index.html";
+    String url = new File("src/main/resources/html/index.html").getAbsolutePath();
+
 
     @BeforeMethod
     public void beforeMethod()
