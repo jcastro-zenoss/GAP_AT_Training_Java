@@ -7,12 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 /**
  * Created by jcastro on 2/26/17.
  */
-public class GooglePageFactory {
+public class GooglePageFactoryWithLC extends LoadableComponent<GooglePageFactoryWithLC> {
 
     WebDriver driver;
     BotStyle botDriver;
@@ -28,18 +30,21 @@ public class GooglePageFactory {
      * Constructor of class
      * @param driver Web Driver to manage page elements
      */
-    public GooglePageFactory(WebDriver driver){
+    public GooglePageFactoryWithLC(WebDriver driver){
         this.driver = driver;
         this.botDriver = new BotStyle(driver);
         PageFactory.initElements(driver, this);
     }
 
-    /**
-     * Load the page
-     * @param url URL of page to load
-     */
-    public void gotoSearchPage(String url){
-        driver.navigate().to(url);
+    @Override
+    protected void load() {
+        driver.get("http://www.google.com");
+    }
+
+    @Override
+    protected void isLoaded() throws Error {
+        String url = driver.getCurrentUrl();
+        Assert.assertTrue(url.contains("google.com"), "Not on the issue entry page: " + url);
     }
 
     /**
@@ -59,19 +64,6 @@ public class GooglePageFactory {
      */
     public SearchPage searchText(String textToSearch){
         searchField.sendKeys(textToSearch);
-        searchField.submit();
-        return new SearchPage(this.driver);
-    }
-
-    /**
-     * This method look for a text in google using
-     * Bot style test
-     *
-     * @param textToSearch Text to search in google
-     * @return SearchPage object
-     */
-    public SearchPage searchTextWithBoot(String textToSearch){
-        this.botDriver.type(searchField, textToSearch);
         searchField.submit();
         return new SearchPage(this.driver);
     }
