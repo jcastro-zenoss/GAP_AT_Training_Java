@@ -15,7 +15,7 @@ public class TestGoogleWithPatterns {
     public static void main(String[] args) {
 
         SeleniumBase seleniumBase = new SeleniumBase();
-        WebDriver driver = seleniumBase.initDriver("Chrome");
+        WebDriver driver = seleniumBase.initDriver("Firefox");
 
         String searchText = "Cheese!";
         //testPageObject(driver, searchText);

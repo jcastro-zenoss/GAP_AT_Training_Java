@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 /**
  * Created by jcastro on 5/22/16.
@@ -50,7 +51,9 @@ public class SeleniumBase {
     }
 
     private WebDriver initFirefoxDriver(){
-        return new FirefoxDriver();
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        capabilities.setCapability("marionette", true);
+        return new FirefoxDriver(capabilities);
     }
 
     private WebDriver initHTMLUnitDriver(){
