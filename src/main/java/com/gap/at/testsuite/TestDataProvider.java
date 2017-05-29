@@ -1,6 +1,6 @@
 package com.gap.at.testsuite;
 
-import com.gap.at.dataprovider.GoogleDataProvider;
+import com.gap.at.testngdataprovider.GoogleDataProvider;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

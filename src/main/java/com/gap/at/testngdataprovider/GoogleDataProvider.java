@@ -1,9 +1,8 @@
-package com.gap.at.dataprovider;
+package com.gap.at.testngdataprovider;
 
 import com.gap.at.utils.ExcelUtils;
 import org.testng.annotations.DataProvider;
 
-import java.io.IOException;
 import java.lang.reflect.Method;
 
 /**
