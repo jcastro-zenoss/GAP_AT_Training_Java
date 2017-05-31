@@ -21,13 +21,13 @@ public class TestDataProvider {
         return new Object[][] {
                 {1, true},
                 {2, false},
-        };
+        };987
     }
 
     /********************************************
      * Test cases that use local data providers
      ********************************************/
-    @Test(groups = "test01", dataProvider = "ddpLocalp1")
+    @Test(groups = "test01", dataProvider = "dpLocal")
     public void test01(Integer inputNumber, Boolean expectedResult) {
         System.out.println(inputNumber + " " + expectedResult);
     }

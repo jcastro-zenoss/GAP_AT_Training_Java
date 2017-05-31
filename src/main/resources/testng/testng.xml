@@ -5,8 +5,8 @@
     <groups>
       <run>
         <!--include name="test01"/>
-        <include name="test02"/>
-        <include name="test03"/-->
+        <include name="test02"/-->
+        <!--include name="test03"/-->
         <include name="test04"/>
       </run>
     </groups>
