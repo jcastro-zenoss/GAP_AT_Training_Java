@@ -15,7 +15,6 @@ public class TestFactory {
         for (int i = 0; i < 10; i++) {
             result[i] = new WebTest(i);
         }
-
         return result;
     }
 

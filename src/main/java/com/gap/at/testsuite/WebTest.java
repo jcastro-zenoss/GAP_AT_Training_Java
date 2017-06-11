@@ -13,8 +13,13 @@ public class WebTest {
         m_numOfTimes = numberOfTimes;
     }
 
-    @Test
+    @Test(groups = "test1")
     public void testServer() {
+        System.out.println(String.format("Web Page access #: %d", m_numOfTimes));
+    }
+
+    @Test
+    public void testServer1() {
         System.out.println(String.format("Web Page access #: %d", m_numOfTimes));
     }
 
