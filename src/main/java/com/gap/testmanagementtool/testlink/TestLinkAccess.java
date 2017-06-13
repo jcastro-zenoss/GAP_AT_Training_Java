@@ -45,35 +45,4 @@ public class TestLinkAccess extends TestLinkAPI{
     {
         return setTestCaseExecutionResult(testCaseId, null, testPlanId, ExecutionStatus.getExecutionStatus(status.charAt(0)), buildID, null, notes, true, null, null, null, null, false);
     }
-
-    /*String url;
-    String devKey;
-    TestLinkAPI api;
-
-    public TestLinkAccess(String url, String devKey){
-        this.url = url;
-        this.devKey = devKey;
-        api = null;
-    }
-
-    public TestLinkAPI getTeslinkConnection(){
-        URL testlinkURL = null;
-
-        try {
-            testlinkURL = new URL(url);
-        } catch ( MalformedURLException mue ){
-            mue.printStackTrace( System.err );
-            System.exit(-1);
-        }
-
-        try{
-            api = new TestLinkAPI(testlinkURL, devKey);
-        } catch( TestLinkAPIException te) {
-            te.printStackTrace( System.err );
-            System.exit(-1);
-        }
-
-        System.out.println(api.ping());
-        return api;
-    }*/
 }
